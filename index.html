@@ -1,0 +1,42 @@
+</<!DOCTYPE html>
+<html lang="en" dir="ltr" style="height:100%; margin: 0;>
+  <head>
+
+    <meta "charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <title>Worlds Adrift Map</title>
+
+    <link rel="stylesheet" href="scripts/leaflet/leaflet.css"/>
+
+    <script src="scripts/leaflet/leaflet.css">
+      </script>
+
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+
+    <script src="scripts/leaflet/leaflet.js" charset="utf-8">
+      </script>
+  </head>
+  <header style="height: 10%; width:100%; background: darkgrey">
+    <h1 align: "center" font-weight: "bold">testies</h1>
+  </header>
+  <body style="height: 100%; margin: 0;">
+
+    <div id="mapid" style="height:100%; width: 100%; background: #000;">
+    <script type="text/javascript">
+
+// Declare map Project
+    var map = L.map('mapid').setView([0, 0], 2);
+
+// Reference the Tiles
+    L.tileLayer('maps/update-28/{z}/{x}/{y}.png', {
+      minZoom: 1,
+      maxZoom: 6,
+      continuousWorld: false,
+      noWrap: true,
+    }).addTo(map);
+
+//Markers and Popups
+
+</script>
+  </body>
+</html>
