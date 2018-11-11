@@ -4,7 +4,7 @@
   right: 0;
   bottom: auto;
   left: 0;
-  height:70%;
+  height: 70%;
   width: 50%;
   min-width: 900px;
   min-height: 400px;
@@ -13,20 +13,19 @@
   border-radius: 0px;
   margin-left: auto;
   margin-right: auto;
-  align-content:center;
+  align-content: center;
 }
 
 .leaflet-container .leaflet-control-attribution {
-	display: none;
+  display: none;
 }
 
-.footer {
-    position:fixed;
-    align: baseline;
-    top:inherit;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: darkgrey;
-    text-align: center;
+.footer1 {
+  position: fixed;
+  align: baseline;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darkgrey;
+  text-align: center;
 }
