@@ -26,37 +26,37 @@
 
 <body style="height: 100%; margin: 0; background: #555; min-width: 602px; min-height: 500px;">
 
-    <div id="map" class="text-norap center-div leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-      style="background: #000;">
-      <script type="text/javascript">
-        // Declare map Project
-        var map = L.map('map').setView([0, 0], 2);
+  <div id="map" class="text-norap center-div leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+    style="background: #000;">
+    <script type="text/javascript">
+      // Declare map Project
+      var map = L.map('map').setView([0, 0], 2);
 
-        // Were we Reference the Tiles
-        L.tileLayer('maps/update-28/{z}/{x}/{y}.png', {
-          minZoom: 1,
-          maxZoom: 6,
-          continuousWorld: false,
-          noWrap: true,
-        }).addTo(map);
+      // Were we Reference the Tiles
+      L.tileLayer('maps/update-28/{z}/{x}/{y}.png', {
+        minZoom: 1,
+        maxZoom: 6,
+        continuousWorld: false,
+        noWrap: true,
+      }).addTo(map);
 
-        var map = L.map('map', {
-          crs: L.CRS.Simple
-        });
+      var map = L.map('map', {
+        crs: L.CRS.Simple
+      });
 
-        var bounds = [
-          [0, 0],
-          [1000, 1000]
-        ];
-        var image = L.imageOverlay('uqm_map_full.png', bounds).addTo(map);
-        map.fitBounds(bounds);
+      var bounds = [
+        [0, 0],
+        [1000, 1000]
+      ];
+      var image = L.imageOverlay('uqm_map_full.png', bounds).addTo(map);
+      map.fitBounds(bounds);
 
-        //Markers and Popups
-      </script>
+      //Markers and Popups
+    </script>
 
+    <div class="footer" style="height: 5%; min-height: 3em; width:100%; background: darkgrey; margin-top: 5em;">
 
-      </body>
-      <div class="footer" style="height: 5%; min-height: 3em; width:100%; background: darkgrey; margin-top: 5em;">
+    </div>
+</body>
 
-      </div>
 </html>
