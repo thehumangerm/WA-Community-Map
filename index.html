@@ -8,10 +8,10 @@
 <title>Worlds Adrift Map
 </title>
 
-<link rel="stylesheet" href="scripts/leaflet/leaflet.css" />
+<link rel="stylesheet" type="text/css" href="scripts/leaflet/leaflet.css" />
+<link rel="stylesheet" type="text/css" href="scripts/custom.css" />
 
-<script src="scripts/leaflet/leaflet.css">
-</script>
+
 
 <!-- Make sure you put this AFTER Leaflet's CSS -->
 <script src="scripts/leaflet/leaflet.js" charset="utf-8">
@@ -20,16 +20,16 @@
 </head>
 
 <!--Top Bar you Idiot-->
-<header style="height: 10%; min-height: 5em; width:100%; background: darkgrey">
-  <h1 style="text-align:center; line-height: 2.5em; font-weight: bold;">
-    Worlds Adrift Map Update 28
+<header style="height: 10%; min-height: 5em; width:100%; background: darkgrey; margin-bottom: 5em;">
+  <h1 style="text-align:center; line-height: 2.5em; font-weight: bold; white-space: nowrap;"">
+    Worlds Adrift Map
   </h1>
 </header>
 
-<body style=" height: 100%; margin: 0;">
+<body style=" height: 100%; margin: 0; background: #555; min-width: 602px;">
 
-  <div id="map" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-    style="height:90%; width: 100%;background: #000;">
+  <div id="map" class="text-norap center-div leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+    style="height:50%; width: 50%; min-width: 500px; background: #000; ">
     <script type="text/javascript">
       // Declare map Project
       var map = L.map('map').setView([0, 0], 2);
