@@ -12,7 +12,6 @@
 <link rel="stylesheet" type="text/css" href="scripts/custom.css" />
 
 
-
 <!-- Make sure you put this AFTER Leaflet's CSS -->
 <script src="scripts/leaflet/leaflet.js" charset="utf-8">
 </script>
@@ -21,40 +20,40 @@
 
 <!--Top Bar you Idiot-->
 <header style="height: 10%; min-height: 5em; width:100%; background: darkgrey; margin-bottom: 5em;">
-  <h1 style="text-align:center; line-height: 2.5em; font-weight: bold; white-space: nowrap;"">
+  <h1 style="text-align:center; line-height: 2.5em; font-weight: bold; white-space: nowrap;">
     Worlds Adrift Map
   </h1>
 </header>
 
-<body style=" height: 100%; margin: 0; background: #555; min-width: 602px;">
+<body style="height: 100%; margin: 0; background: #555; min-width: 602px;">
 
-  <div id="map" class="text-norap center-div leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-    style="height:50%; width: 50%; min-width: 500px; background: #000; ">
-    <script type="text/javascript">
-      // Declare map Project
-      var map = L.map('map').setView([0, 0], 2);
+    <div id="map" class="text-norap center-div leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+      style="height:50%; width: 50%; min-width: 500px; background: #000;">
+      <script type="text/javascript">
+        // Declare map Project
+        var map = L.map('map').setView([0, 0], 2);
 
-      // Were we Reference the Tiles
-      L.tileLayer('maps/update-28/{z}/{x}/{y}.png', {
-        minZoom: 1,
-        maxZoom: 6,
-        continuousWorld: false,
-        noWrap: true,
-      }).addTo(map);
+        // Were we Reference the Tiles
+        L.tileLayer('maps/update-28/{z}/{x}/{y}.png', {
+          minZoom: 1,
+          maxZoom: 6,
+          continuousWorld: false,
+          noWrap: true,
+        }).addTo(map);
 
-      var map = L.map('map', {
-        crs: L.CRS.Simple
-      });
+        var map = L.map('map', {
+          crs: L.CRS.Simple
+        });
 
-      var bounds = [
-        [0, 0],
-        [1000, 1000]
-      ];
-      map.fitBounds(bounds);
+        var bounds = [
+          [0, 0],
+          [1000, 1000]
+        ];
+        map.fitBounds(bounds);
 
-      //Markers and Popups
-    </script>
+        //Markers and Popups
+      </script>
 
-</body>
+      </body>
 
 </html>
