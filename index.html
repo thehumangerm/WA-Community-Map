@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr" style="height:100%; margin: 0;>
   <head>
 
-    <meta " charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta " charset="utf-8"
+  name="viewport" content="width=device-width, initial-scale=0.5">
 
 <title>Worlds Adrift Map
 </title>
@@ -19,15 +20,16 @@
 </head>
 
 <!--Top Bar you Idiot-->
-<header style="height: 10%; width:100%; background: darkgrey">
-  <h1 style="text-align:center; align: center;" font-weight: bold;>
+<header style="height: 10%; min-height: 5em; width:100%; background: darkgrey">
+  <h1 style="text-align:center; line-height: 2.5em; font-weight: bold;">
     Worlds Adrift Map Update 28
   </h1>
 </header>
 
 <body style=" height: 100%; margin: 0;">
 
-  <div id="map" style="height:90%; width: 100%; background: #000;">
+  <div id="map" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+    style="height:90%; width: 100%;background: #000;">
     <script type="text/javascript">
       // Declare map Project
       var map = L.map('map').setView([0, 0], 2);
@@ -43,6 +45,12 @@
       var map = L.map('map', {
         crs: L.CRS.Simple
       });
+
+      var bounds = [
+        [0, 0],
+        [1000, 1000]
+      ];
+      map.fitBounds(bounds);
 
       //Markers and Popups
     </script>
