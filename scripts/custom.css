@@ -1,17 +1,32 @@
 .center-div {
-  position:relative;
-  top: 0;
+  position: relative;
+  top: auto;
   right: 0;
-  bottom: 0;
+  bottom: auto;
   left: 0;
-  min-width: 80%;
-  min-height: 70%;
+  height:70%;
+  width: 50%;
+  min-width: 900px;
+  min-height: 400px;
+  max-height: 70%;
+  max-width: 80%;
   border-radius: 0px;
   margin-left: auto;
   margin-right: auto;
-  align-content: space-between;
+  align-content:center;
 }
 
 .leaflet-container .leaflet-control-attribution {
 	display: none;
+}
+
+.footer {
+    position:fixed;
+    align: baseline;
+    top:inherit;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkgrey;
+    text-align: center;
 }

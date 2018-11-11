@@ -8,9 +8,8 @@
 <title>Worlds Adrift Map
 </title>
 
-<link rel="stylesheet" type="text/css" href="scripts/leaflet/leaflet.css" />
 <link rel="stylesheet" type="text/css" href="scripts/custom.css" />
-
+<link rel="stylesheet" type="text/css" href="scripts/leaflet/leaflet.css" />
 
 <!-- Make sure you put this AFTER Leaflet's CSS -->
 <script src="scripts/leaflet/leaflet.js" charset="utf-8">
@@ -25,10 +24,10 @@
   </h1>
 </header>
 
-<body style="height: 100%; margin: 0; background: #555; min-width: 602px;">
+<body style="height: 100%; margin: 0; background: #555; min-width: 602px; min-height: 500px;">
 
     <div id="map" class="text-norap center-div leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-      style="height:50%; width: 50%; min-width: 500px; background: #000;">
+      style="background: #000;">
       <script type="text/javascript">
         // Declare map Project
         var map = L.map('map').setView([0, 0], 2);
@@ -49,11 +48,15 @@
           [0, 0],
           [1000, 1000]
         ];
+        var image = L.imageOverlay('uqm_map_full.png', bounds).addTo(map);
         map.fitBounds(bounds);
 
         //Markers and Popups
       </script>
 
-      </body>
 
+      </body>
+      <div class="footer" style="height: 5%; min-height: 3em; width:100%; background: darkgrey; margin-top: 5em;">
+
+      </div>
 </html>
