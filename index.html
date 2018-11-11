@@ -27,29 +27,30 @@
 <body style="height: 100%; margin: 0; background: #004580; min-width: 602px; min-height: 500px;">
 
   <div id="background-wrap">
-      <div class="x1">
-          <div class="cloud"></div>
-      </div>
+    <div class="x1">
+      <div class="cloud"></div>
+    </div>
 
-      <div class="x2">
-          <div class="cloud"></div>
-      </div>
+    <div class="x2">
+      <div class="cloud"></div>
+    </div>
 
-      <div class="x3">
-          <div class="cloud"></div>
-      </div>
+    <div class="x3">
+      <div class="cloud"></div>
+    </div>
 
-      <div class="x4">
-          <div class="cloud"></div>
-      </div>
+    <div class="x4">
+      <div class="cloud"></div>
+    </div>
 
-      <div class="x5">
-          <div class="cloud"></div>
-      </div>
+    <div class="x5">
+      <div class="cloud"></div>
+    </div>
   </div>
 
-  <div id="map" class="text-norap center-div leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-    style="background: #000;">
+
+  <div id="map" class="border1 text-norap center-div leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+    style="background: #004580;">
     <script type="text/javascript">
       // Declare map Project
       var map = L.map('map').setView([0, 0], 2);
@@ -57,7 +58,7 @@
       // Were we Reference the Tiles
       L.tileLayer('maps/update-28/{z}/{x}/{y}.png', {
         minZoom: 1,
-        maxZoom: 6,
+        maxZoom: 5,
         continuousWorld: false,
         noWrap: true,
       }).addTo(map);
@@ -75,10 +76,15 @@
 
       //Markers and Popups
     </script>
-
-    <div class="footer1" style="height: 5%; min-height: 3em; width:100%; background: #002a4e; color: #d1e9ff; */margin-top: 5em;">
-<p>A community project by thehumangerm<br>beta version 1.0</p>
-    </div>
+  </div>
 </body>
+
+<div id="floatframe">
+  <iframe src="https://discordapp.com/widget?id=499113877762736141&theme=dark" width="100%" height="500" 
+    allowtransparency="true" frameborder="0">
+  </iframe></div>
+
+<div class="footer1" style="height: 5%; min-height: 3em; width:100%; color: #d1e9ff; */margin-top: 5em;">
+  <p>A community project by thehumangerm<br>beta version 1.0</p>
 
 </html>
