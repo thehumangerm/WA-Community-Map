@@ -21,7 +21,8 @@ body {
   position: relative;
   display: inline-block;
   z-index: 2;
-  height: 350px;
+  height: 250px;
+  margin-top: 20%;
   letter-spacing: 15px;
 }
 
