@@ -1,14 +1,14 @@
 .center-div {
   position: relative;
-  top: 20px;
-  right: 0;
+  top: 0px;
+  right: 0px;
   bottom: auto;
   left: 0;
   height: 70%;
   width: 50%;
-  min-width: 900px;
+  min-width: 600px;
   min-height: 400px;
-  max-height: 70%;
+  max-height: 60%;
   max-width: 100%;
   border-radius: 0px;
   margin-left: auto;
